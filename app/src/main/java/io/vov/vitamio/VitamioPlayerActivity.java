@@ -53,10 +53,11 @@ public class VitamioPlayerActivity extends Activity {
         String path = "http://o9ve1mre2.bkt.clouddn.com/raw_天宫二号";
         msg_path = "rtmp://play.jiashizhan.com/live/streamkey=" + streamkey + "&roomid=" + roomID + "&dataid=" + userID + "&isApp=1";
         Log.e("msg_path", msg_path);
+        String path_yin = "http://save.jiashizhan.com:8081/video/20171027/130023675_020714/3675_20171027020714231_av.mp4";
         VideoView mVideoView;
         int surface_viewId = UZResourcesIDFinder.getResIdID("surface_view");
         mVideoView = (VideoView) findViewById(surface_viewId);
-        mVideoView.setVideoPath(msg_path);
+        mVideoView.setVideoPath(path_yin);
 //        mVideoView.setMediaController(new MediaController(this));
         mVideoView.requestFocus();
 
