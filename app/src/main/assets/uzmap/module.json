@@ -1,0 +1,8 @@
+{
+	modules:[
+		{
+		    name:'VitamioPlayer',
+		    class:'io.vov.vitamio.VitamioPlayer'
+		}
+	]
+}

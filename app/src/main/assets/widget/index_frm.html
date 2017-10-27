@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, initial-scale=1.0, width=device-width"/>
+    <meta name="format-detection" content="telephone=no, email=no, date=no, address=no">
+    <title>WinA</title>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="css/box.css"/>
+    <script type="text/javascript" src="script/public.js"></script>
+    <style>
+    	p{
+    		color:#999;
+    		padding:5px;
+    	}
+    </style>
+    <script type="text/javascript">
+
+	function startIJKPlayer(){
+	        var uz=api.require('VitamioPlayer');
+			<!--var param = {appParam:"http://o9ve1mre2.bkt.clouddn.com/raw_天宫二号"};-->
+			 var param = {appParam:"{streamkey='lili',roomID='23266772', userID='3266'}"};
+	        uz.startVitamio(param);
+		}
+    </script>
+</head>
+<body>
+<div id="wrap">
+    <div id="main">
+        <br>
+        <div class='text' style=" text-align:center;">启动activity</div>
+        <div class="clickbtn" tapmode="active" onclick="startIJKPlayer()">startActivity</div>
+        <br>
+    </div>
+</div>
+</body>
+</html>
